@@ -26,22 +26,22 @@ Draft: false
 WidgetCo is the world leader in widget production.
 ```
 
-## Services Section
+## Features Section
 
-Create a markdown file describing a service you offer in `content/services/` - e.g. `content/services/widgets.md`.
+Create a markdown file describing a feature you offer in `content/features/` - e.g. `content/features/widgets.md`.
 
 ```txt
 ---
 Title: Customized Widgets
 Img: widgets.png
-Category: Services
+Category: Features
 Draft: false
 ---
 
 We specialize in bespoke widgets, built to your specification.
 ```
 
-Then place a matching image in `static/img/services/` - e.g. `static/img/services/widgets.png`
+Then place a matching image in `static/img/features/` - e.g. `static/img/features/widgets.png`
 
 ## Pricing Section
 
