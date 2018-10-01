@@ -20,11 +20,6 @@
                 <li>
                     <a class="page-scroll" href="#features">Features</a>
                 </li>
-                {{ range where .Data.Pages "Section" "pricing" | first 1 }}
-                    <li>
-                        <a class="page-scroll" href="#pricing">Sign-up</a>
-                    </li>
-                {{ end }}
                 {{ if isset .Site.Params "docs" }}
                 <li>
                     <a class="page-scroll" href="{{ .Site.Params.docs }}">Docs</a>
@@ -34,6 +29,11 @@
                 <li>
                     <a class="page-scroll" href="{{ .Site.Params.playground }}">Playground</a>
                 </li>
+                {{ end }}
+                {{ range where .Data.Pages "Section" "pricing" | first 1 }}
+                    <li>
+                        <a class="page-scroll" href="#pricing">Sign-up</a>
+                    </li>
                 {{ end }}
                 {{ if isset .Site.Params "social" }}
                 <li>
