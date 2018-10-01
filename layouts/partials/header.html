@@ -25,6 +25,16 @@
                         <a class="page-scroll" href="#pricing">Pricing</a>
                     </li>
                 {{ end }}
+                {{ if isset .Site.Params "docs" }}
+                <li>
+                    <a class="page-scroll" href="{{ .Site.Params.docs }}">Docs</a>
+                </li>
+                {{ end }}
+                {{ if isset .Site.Params "playground" }}
+                <li>
+                    <a class="page-scroll" href="{{ .Site.Params.playground }}">Playground</a>
+                </li>
+                {{ end }}
                 {{ if isset .Site.Params "social" }}
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
