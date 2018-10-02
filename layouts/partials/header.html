@@ -40,6 +40,11 @@
                     <a class="page-scroll" href="#contact">Contact</a>
                 </li>
                 {{ end }}
+                {{ if isset .Site.Params "login" }}
+                <li>
+                    <a class="page-scroll" href="{{ .Site.Params.login }}" style="padding-top: 13px; padding-left: 6px; padding-bottom: 0px"><img src="/img/login.png" style="width: auto; height: 24px"></a>
+                </li>
+                {{ end }}
             </ul>
         </div>
         <!-- /.navbar-collapse -->
