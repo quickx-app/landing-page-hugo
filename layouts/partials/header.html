@@ -32,7 +32,7 @@
                 {{ end }}
                 {{ range where .Data.Pages "Section" "pricing" | first 1 }}
                     <li>
-                        <a class="page-scroll" href="#pricing">Sign-up</a>
+                        <div class="page-scroll"><a href="#pricing">Sign-up</a></div>
                     </li>
                 {{ end }}
                 {{ if isset .Site.Params "social" }}
