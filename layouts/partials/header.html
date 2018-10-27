@@ -31,11 +31,9 @@
                 </li>
                 {{ end }}
                 {{ range where .Data.Pages "Section" "pricing" | first 1 }}
-                    <li>
-                      <div class="page-scroll" style="margin-left: -2px; margin-right: 6px; padding-top: 15px; padding-bottom: 15px;">
-                        <a href="#pricing" style="margin-top: 10px; margin-left: 10px; padding: 5px 6px; color: #ffffff; background: #ff7c2f; border: 1px solid lightgray; border-radius: 6px;">Sign-up</a>
-                      </div>
-                    </li>
+                <li>
+                    <a class="page-scroll" href="#pricing" style="margin: 10px; padding: 5px 6px; color: #ffffff; background: #ff7c2f; border: 1px solid lightgray; border-radius: 6px;">Sign-up</a>
+                </li>
                 {{ end }}
                 {{ if isset .Site.Params "social" }}
                 <li>
