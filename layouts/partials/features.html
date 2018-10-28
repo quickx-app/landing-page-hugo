@@ -23,9 +23,9 @@
                 {{ if .Params.img }}
                 <div class="col-lg-7 col-lg-offset-0 col-sm-6">
                     {{ if eq .Params.img_type "iframe" }}
-                        <iframe src="{{ .Params.img }}" scrolling="no" style="{{ .Params.img_style }}"></iframe>
+                        <iframe src="{{ .Params.img }}" scrolling="no" style="{{ safeCSS .Params.img_style }}"></iframe>
                     {{ else }}
-                        <img class="img-responsive" src="img/{{ .Params.img }}" alt="">
+                        <img class="img-responsive" src="img/{{ .Params.img }}" alt="" style="{{ safeCSS .Params.img_style }}">
                     {{ end }}
                 </div>
                 {{ end }}
@@ -58,9 +58,9 @@
                 {{ if .Params.img }}
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     {{ if eq .Params.img_type "iframe" }}
-                        <iframe src="{{ .Params.img }}" scrolling="no" style="{{ .Params.img_style }}"></iframe>
+                        <iframe src="{{ .Params.img }}" scrolling="no" style="{{ safeCSS .Params.img_style }}"></iframe>
                     {{ else }}
-                        <img class="img-responsive" src="img/{{ .Params.img }}" alt="">
+                        <img class="img-responsive" src="img/{{ .Params.img }}" alt="" style="{{ safeCSS .Params.img_style }}">
                     {{ end }}
                 </div>
                 {{ end }}
