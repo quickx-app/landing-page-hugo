@@ -17,17 +17,19 @@
                 <li>
                     <a class="page-scroll" href="#about">About</a>
                 </li>
+                {{ range where .Data.Pages "Section" "features" | first 1 }}
                 <li>
                     <a class="page-scroll" href="#features">Features</a>
                 </li>
-                {{ if isset .Site.Params "docs" }}
+                {{ end }}
+                {{ range where .Data.Pages "Section" "docs" | first 1 }}
                 <li>
-                    <a class="page-scroll" href="{{ .Site.Params.docs }}">Docs</a>
+                    <a class="page-scroll" href="#docs">Docs</a>
                 </li>
                 {{ end }}
-                {{ if isset .Site.Params "playground" }}
+                {{ range where .Data.Pages "Section" "faq" | first 1 }}
                 <li>
-                    <a class="page-scroll" href="{{ .Site.Params.playground }}">Playground</a>
+                    <a class="page-scroll" href="#faq">FAQ</a>
                 </li>
                 {{ end }}
                 {{ range where .Data.Pages "Section" "pricing" | first 1 }}
