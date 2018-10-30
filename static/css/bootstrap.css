@@ -999,7 +999,7 @@ h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: #555555;
 }
 h1 small,
 h2 small,
@@ -1102,7 +1102,6 @@ h6,
 p {
   margin: 0 0 10px;
   color: #555555;
-  background-color: #f8f8f8;
 }
 .lead {
   margin-bottom: 20px;
@@ -1349,6 +1348,7 @@ code {
   padding: 2px 4px;
   font-size: 90%;
   color: #505050;
+  background-color: #f8f8f8;
   border-radius: 4px;
 }
 kbd {
