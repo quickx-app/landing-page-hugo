@@ -1101,6 +1101,8 @@ h6,
 }
 p {
   margin: 0 0 10px;
+  color: #555555;
+  background-color: #f8f8f8;
 }
 .lead {
   margin-bottom: 20px;
@@ -1346,8 +1348,7 @@ samp {
 code {
   padding: 2px 4px;
   font-size: 90%;
-  color: #c7254e;
-  background-color: #f9f2f4;
+  color: #505050;
   border-radius: 4px;
 }
 kbd {
