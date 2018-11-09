@@ -23,6 +23,7 @@
                             {{ $c :=add $i 1 }}
                             <div style="order: {{ $c }}; border: {{ $content.border }};" class="Rtable-cell">{{ $feature.name | safeHTML }}</div>
                         {{ end }}
+                        {{ $c := add (len $content.features) 1 }}
                         <div style="order: {{ $c }}; border: {{ $content.border }};" class="Rtable-cell Rtable-cell--foot">
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick"/>
