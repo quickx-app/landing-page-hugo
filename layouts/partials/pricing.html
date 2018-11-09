@@ -24,7 +24,7 @@
                             <div style="order: {{ $c }}; border: {{ $content.border }};" class="Rtable-cell">{{ $feature.name | safeHTML }}</div>
                         {{ end }}
                         {{ $c := add (len $content.features) 1 }}
-                        <div style="order: {{ $c }}; border: {{ $content.border }};" class="Rtable-cell Rtable-cell--foot">
+                        <div style="order: {{ $c }}; padding: 0.8em 0em; border: {{ $content.border }};" class="Rtable-cell Rtable-cell--foot">
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick"/>
 <input type="hidden" name="hosted_button_id" value="{{ $content.link }}"/>
