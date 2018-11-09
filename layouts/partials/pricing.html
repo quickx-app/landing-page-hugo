@@ -2,7 +2,7 @@
 <section id="pricing" class="container content-section text-center">
     {{ range where .Data.Pages "Section" "pricing" | first 1 }}
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-10 col-lg-offset-1">
                 {{ if .Title  }}
                 <br/>
                 <br/>
@@ -21,33 +21,19 @@
                         </div>
                         {{ range $i, $feature := $content.features}}
                             {{ $c :=add $i 1 }}
-                            {{ if eq $c (len $content.features) }}
-                              {{ if eq $content.link "" }}
-                                <div style="order: {{ $c }}; border: {{ $content.border }};" class="Rtable-cell Rtable-cell--foot">
-<form action="https://api.quicklog.io/register" method="post" target="_top">
-<input type="text" name="email" placeholder="email address" value="" style="width: 100%"/><br/>
-<input type="submit" value="{{ $feature.name }}" style="margin-top: 0.25em"/>
-</form>
-                                </div>
-                              {{ else }}
-                                <div style="order: {{ $c }}; border: {{ $content.border }};" class="Rtable-cell Rtable-cell--foot">
+                            <div style="order: {{ $c }}; border: {{ $content.border }};" class="Rtable-cell">{{ $feature.name | safeHTML }}</div>
+                        {{ end }}
+                        <div style="order: {{ $c }}; border: {{ $content.border }};" class="Rtable-cell Rtable-cell--foot">
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick"/>
 <input type="hidden" name="hosted_button_id" value="{{ $content.link }}"/>
-<input type="hidden" name="item_name" value="{{ $content.linkText }} - email delivery <support@quicklog.io>"/>
+<input type="hidden" name="item_name" value="{{ $content.linkText }} - email delivery <support@gitgrep.com>"/>
 <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-small.png" border="0" name="submit" alt="Check out with PayPal" style="margin-top: 0.75em"/>
 <span style="float: right"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/></span>
 </form>
-{{ $feature.name | safeHTML }}
-                                </div>
-                              {{ end }}
-                            {{ else }}
-                              <div style="order: {{ $c }}; border: {{ $content.border }};" class="Rtable-cell">{{ $feature.name | safeHTML }}</div>
-                            {{ end }}
-                        {{ end }}
+                        </div>
                     {{ end }}
                 </div>
-                (*) DAU estimated using 25 post actions/user and 20 entries/action.<br/>
                 After check out, you will receive an email with&nbsp;your&nbsp;access&nbsp;information.
                 <br/>
                 &nbsp;
