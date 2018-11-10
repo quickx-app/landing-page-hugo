@@ -20,6 +20,7 @@ are kept in here in case we use them later.
   padding: 0;
 }
 .Rtable-cell {
+  font-size: 17px;
   box-sizing: border-box;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
