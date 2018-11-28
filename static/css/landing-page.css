@@ -26,6 +26,16 @@ h6 {
     font-weight: 700;
 }
 
+h1 {
+    color: #008888;
+}
+h2 {
+    color: #444444;
+}
+h3 {
+    color: #333333;
+}
+
 .lead {
     font-size: 18px;
     font-weight: 400;
@@ -64,7 +74,7 @@ h6 {
 
 .intro-message > h1 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
     font-size: 5em;
 }
 
@@ -75,13 +85,13 @@ h6 {
 }
 
 .intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
 }
 
 @media(max-width:767px) {
     .intro-header {
         height: 41.2vw;
-	color: black;
+	color: #222;
     }
 
     .intro-message > h1 {
@@ -106,7 +116,7 @@ h6 {
 @media(min-width:768px) {
     .intro-header {
         height: 20vw;
-	color: black;
+	color: #222;
     }
 }
 
@@ -147,7 +157,7 @@ h6 {
 
 .contact h2 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
     font-size: 3em;
 }
 
@@ -170,7 +180,7 @@ h6 {
 @media(max-width:767px) {
     .contact h2 {
         margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
         font-size: 3em;
     }
 

@@ -22,6 +22,11 @@
                     <a class="page-scroll" href="#features">Features</a>
                 </li>
                 {{ end }}
+                {{ range where .Data.Pages "Section" "demo" | first 1 }}
+                <li>
+                    <a class="page-scroll" href="#demo">Demo</a>
+                </li>
+                {{ end }}
                 {{ range where .Data.Pages "Section" "docs" | first 1 }}
                 <li>
                     <a class="page-scroll" href="#docs">Docs</a>
